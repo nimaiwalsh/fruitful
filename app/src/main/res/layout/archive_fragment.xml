@@ -23,7 +23,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.android.trackr.ui.archives.ArchiveViewModel" />
+            type="com.example.android.fruitful.ui.archives.ArchiveViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

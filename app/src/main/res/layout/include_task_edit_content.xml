@@ -24,7 +24,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.android.trackr.ui.edit.TaskEditViewModel" />
+            type="com.example.android.fruitful.ui.edit.TaskEditViewModel" />
 
         <variable
             name="clock"

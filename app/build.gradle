@@ -27,7 +27,7 @@ android {
     buildToolsVersion build_tools_version
 
     defaultConfig {
-        applicationId "com.example.android.trackr"
+        applicationId "com.example.android.fruitful"
         minSdkVersion 23
         targetSdkVersion 30
         multiDexEnabled true

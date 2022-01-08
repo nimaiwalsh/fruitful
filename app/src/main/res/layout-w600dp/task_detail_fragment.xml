@@ -23,7 +23,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.android.trackr.ui.detail.TaskDetailViewModel" />
+            type="com.example.android.fruitful.ui.detail.TaskDetailViewModel" />
 
         <variable
             name="clock"
@@ -89,7 +89,7 @@
                         android:layout_marginTop="@dimen/spacing_large"
                         android:orientation="horizontal">
 
-                        <com.example.android.trackr.ui.widget.StarButton
+                        <com.example.android.fruitful.ui.widget.StarButton
                             android:id="@+id/star"
                             android:layout_width="@dimen/home_task_star_size"
                             android:layout_height="@dimen/home_task_star_size"

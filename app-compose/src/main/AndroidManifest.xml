@@ -16,10 +16,10 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.trackr.compose">
+    package="com.example.android.fruitful.compose">
 
     <application
-        android:name=".TrackrComposeApplication"
+        android:name="com.example.android.fruitful.compose.TrackrComposeApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,7 +28,7 @@
         android:theme="@style/Theme.Trackr">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.android.fruitful.compose.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Trackr">

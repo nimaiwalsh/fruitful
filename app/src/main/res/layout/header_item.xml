@@ -21,11 +21,11 @@
 
         <variable
             name="headerData"
-            type="com.example.android.trackr.ui.tasks.HeaderData" />
+            type="com.example.android.fruitful.ui.tasks.HeaderData" />
 
         <variable
             name="listener"
-            type="com.example.android.trackr.ui.tasks.TasksAdapter.ItemListener" />
+            type="com.example.android.fruitful.ui.tasks.TasksAdapter.ItemListener" />
 
     </data>
 

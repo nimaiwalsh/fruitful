@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/nav_task_detail"
-        android:name="com.example.android.trackr.ui.detail.TaskDetailFragment"
+        android:name="com.example.android.fruitful.ui.detail.TaskDetailFragment"
         android:label="Task Detail"
         android:layout="@layout/task_detail_fragment">
         <argument
@@ -41,7 +41,7 @@
     <!-- The graph needs a start destination, so use a placeholder. -->
     <fragment
         android:id="@+id/nav_task_detail_placeholder"
-        android:name="com.example.android.trackr.ui.PlaceholderFragment"
+        android:name="com.example.android.fruitful.ui.PlaceholderFragment"
         tools:layout="@layout/placeholder_fragment"/>
 
 </navigation>

@@ -15,7 +15,7 @@
 -->
 
 <resources>
-    <string name="app_name">Trackr</string>
+    <string name="app_name">Fruitful</string>
 
     <!--Task Item -->
     <string name="user">Owner: %s</string>

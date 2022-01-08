@@ -22,7 +22,7 @@
 
         <variable
             name="taskSummary"
-            type="com.example.android.trackr.data.TaskSummary" />
+            type="com.example.android.fruitful.data.TaskSummary" />
 
         <variable
             name="clock"
@@ -46,7 +46,7 @@
             <!-- Marked as not importantForAccessibility and omitting the contentDescription
             because this functionality is exposed as a custom accessibility action.
             See TasksAdapter.kt for implementation. -->
-            <com.example.android.trackr.ui.widget.StarButton
+            <com.example.android.fruitful.ui.widget.StarButton
                 android:id="@+id/star"
                 android:layout_width="@dimen/home_task_star_size"
                 android:layout_height="@dimen/home_task_star_size"
