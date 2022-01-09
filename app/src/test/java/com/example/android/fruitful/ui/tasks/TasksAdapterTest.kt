@@ -24,10 +24,10 @@ import androidx.core.view.ViewCompat
 import androidx.test.core.app.ApplicationProvider
 import com.example.android.fruitful.R
 import com.example.android.fruitful.TestApplication
-import com.example.android.fruitful.data.Avatar
-import com.example.android.fruitful.data.TaskSummary
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.data.User
+import com.example.android.fruitful.compose.data.Avatar
+import com.example.android.fruitful.compose.data.TaskSummary
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.data.User
 import com.google.common.truth.Truth.assertThat
 import org.junit.Assert.assertTrue
 import org.junit.Before

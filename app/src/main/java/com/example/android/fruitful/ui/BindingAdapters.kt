@@ -30,9 +30,9 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 import androidx.core.widget.TextViewCompat
 import androidx.databinding.BindingAdapter
 import com.example.android.fruitful.R
-import com.example.android.fruitful.data.Tag
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.utils.DateTimeUtils
+import com.example.android.fruitful.compose.data.Tag
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.utils.DateTimeUtils
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import java.time.Clock

@@ -22,8 +22,8 @@ import android.view.View
 import android.widget.TextView
 import androidx.test.core.app.ApplicationProvider
 import com.example.android.fruitful.TestApplication
-import com.example.android.fruitful.data.Tag
-import com.example.android.fruitful.data.TagColor
+import com.example.android.fruitful.compose.data.Tag
+import com.example.android.fruitful.compose.data.TagColor
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import com.google.common.truth.Truth.assertThat

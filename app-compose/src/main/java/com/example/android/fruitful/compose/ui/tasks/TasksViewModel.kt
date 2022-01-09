@@ -18,11 +18,11 @@ package com.example.android.fruitful.compose.ui.tasks
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.data.TaskSummary
-import com.example.android.fruitful.data.User
-import com.example.android.fruitful.usecase.GetOngoingTaskSummariesUseCase
-import com.example.android.fruitful.usecase.ToggleTaskStarStateUseCase
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskSummary
+import com.example.android.fruitful.compose.data.User
+import com.example.android.fruitful.compose.usecase.GetOngoingTaskSummariesUseCase
+import com.example.android.fruitful.compose.usecase.ToggleTaskStarStateUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine

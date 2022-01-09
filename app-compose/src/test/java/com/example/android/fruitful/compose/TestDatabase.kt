@@ -18,8 +18,8 @@ package com.example.android.fruitful.compose
 
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
-import com.example.android.fruitful.data.SeedData
-import com.example.android.fruitful.db.AppDatabase
+import com.example.android.fruitful.compose.data.SeedData
+import com.example.android.fruitful.compose.db.AppDatabase
 import kotlinx.coroutines.runBlocking
 
 fun createTestDatabase(): AppDatabase {

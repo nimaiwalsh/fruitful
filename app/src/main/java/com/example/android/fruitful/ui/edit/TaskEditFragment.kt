@@ -35,9 +35,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.android.fruitful.NavTaskEditGraphArgs
 import com.example.android.fruitful.R
-import com.example.android.fruitful.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskStatus
 import com.example.android.fruitful.databinding.TaskEditFragmentBinding
-import com.example.android.fruitful.utils.DateTimeUtils
+import com.example.android.fruitful.compose.utils.DateTimeUtils
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint

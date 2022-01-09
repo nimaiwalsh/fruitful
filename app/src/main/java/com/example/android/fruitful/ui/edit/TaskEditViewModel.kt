@@ -18,14 +18,14 @@ package com.example.android.fruitful.ui.edit
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.android.fruitful.data.Tag
-import com.example.android.fruitful.data.TaskDetail
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.data.User
-import com.example.android.fruitful.usecase.LoadTagsUseCase
-import com.example.android.fruitful.usecase.LoadTaskDetailUseCase
-import com.example.android.fruitful.usecase.LoadUsersUseCase
-import com.example.android.fruitful.usecase.SaveTaskDetailUseCase
+import com.example.android.fruitful.compose.data.Tag
+import com.example.android.fruitful.compose.data.TaskDetail
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.data.User
+import com.example.android.fruitful.compose.usecase.LoadTagsUseCase
+import com.example.android.fruitful.compose.usecase.LoadTaskDetailUseCase
+import com.example.android.fruitful.compose.usecase.LoadUsersUseCase
+import com.example.android.fruitful.compose.usecase.SaveTaskDetailUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.Channel

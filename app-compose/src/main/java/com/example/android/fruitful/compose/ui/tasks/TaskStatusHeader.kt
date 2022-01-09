@@ -40,7 +40,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.android.fruitful.compose.R
 import com.example.android.fruitful.compose.ui.TrackrTheme
-import com.example.android.fruitful.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskStatus
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable

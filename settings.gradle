@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-include ':shared', ':app', ':app-compose'
+include ':app', ':app-compose'
 rootProject.name = "fruitful"

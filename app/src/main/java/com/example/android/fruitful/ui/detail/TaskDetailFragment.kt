@@ -23,12 +23,12 @@ import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.example.android.fruitful.R
-import com.example.android.fruitful.data.TaskDetail
+import com.example.android.fruitful.compose.data.TaskDetail
 import com.example.android.fruitful.databinding.TaskDetailFragmentBinding
 import com.example.android.fruitful.ui.TwoPaneViewModel
 import com.example.android.fruitful.ui.dataBindings
 import com.example.android.fruitful.ui.utils.repeatWithViewLifecycle
-import com.example.android.fruitful.utils.DateTimeUtils
+import com.example.android.fruitful.compose.utils.DateTimeUtils
 import com.google.android.material.button.MaterialButton
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

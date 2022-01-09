@@ -29,7 +29,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.fruitful.R
-import com.example.android.fruitful.data.TaskSummary
+import com.example.android.fruitful.compose.data.TaskSummary
 import com.example.android.fruitful.databinding.TasksFragmentBinding
 import com.example.android.fruitful.ui.dataBindings
 import com.example.android.fruitful.ui.utils.doOnApplyWindowInsets

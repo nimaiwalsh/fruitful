@@ -16,8 +16,8 @@
 
 package com.example.android.fruitful.ui.tasks
 
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.data.TaskSummary
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskSummary
 
 
 /**

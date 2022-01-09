@@ -70,8 +70,7 @@ android {
 }
 
 dependencies {
-    implementation project(':shared')
-    implementation "com.google.firebase:firebase-auth:$firebase_version"
+    implementation "com.google.firebase:firebase-auth-ktx:$firebase_version"
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:$desugar_jdk_version"
 
     implementation "androidx.core:core-ktx:$core_version"
@@ -88,6 +87,9 @@ dependencies {
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0-alpha03'
     kapt "androidx.hilt:hilt-compiler:$hilt_compiler_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    kapt "androidx.room:room-compiler:$room_version"
+    api "androidx.room:room-ktx:$room_version"
 
     testImplementation "junit:junit:$junit_version"
     testImplementation "com.google.truth:truth:$truth_version"
@@ -109,4 +111,6 @@ dependencies {
     androidTestImplementation "androidx.test:runner:$androidx_test_runner_version"
     androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit_version"
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+
 }

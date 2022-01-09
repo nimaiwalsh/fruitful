@@ -20,10 +20,10 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.android.fruitful.compose.CoroutineTestRule
 import com.example.android.fruitful.compose.createTestDatabase
-import com.example.android.fruitful.data.SeedData
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.usecase.GetOngoingTaskSummariesUseCase
-import com.example.android.fruitful.usecase.ToggleTaskStarStateUseCase
+import com.example.android.fruitful.compose.data.SeedData
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.usecase.GetOngoingTaskSummariesUseCase
+import com.example.android.fruitful.compose.usecase.ToggleTaskStarStateUseCase
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import org.junit.Rule

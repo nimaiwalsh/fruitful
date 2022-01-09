@@ -19,7 +19,7 @@ package com.example.android.fruitful.ui.edit
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.android.fruitful.CoroutineTestRule
-import com.example.android.fruitful.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskStatus
 import com.example.android.fruitful.ui.TAG_1
 import com.example.android.fruitful.ui.TAG_2
 import com.example.android.fruitful.ui.TASK_1
@@ -27,10 +27,10 @@ import com.example.android.fruitful.ui.USER_CREATOR
 import com.example.android.fruitful.ui.USER_OTHER
 import com.example.android.fruitful.ui.USER_OWNER
 import com.example.android.fruitful.ui.createDatabase
-import com.example.android.fruitful.usecase.LoadTagsUseCase
-import com.example.android.fruitful.usecase.LoadTaskDetailUseCase
-import com.example.android.fruitful.usecase.LoadUsersUseCase
-import com.example.android.fruitful.usecase.SaveTaskDetailUseCase
+import com.example.android.fruitful.compose.usecase.LoadTagsUseCase
+import com.example.android.fruitful.compose.usecase.LoadTaskDetailUseCase
+import com.example.android.fruitful.compose.usecase.LoadUsersUseCase
+import com.example.android.fruitful.compose.usecase.SaveTaskDetailUseCase
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

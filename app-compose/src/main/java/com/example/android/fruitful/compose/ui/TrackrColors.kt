@@ -26,7 +26,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.runtime.toMutableStateMap
 import androidx.compose.ui.graphics.Color
-import com.example.android.fruitful.data.TagColor
+import com.example.android.fruitful.compose.data.TagColor
 
 /**
  * Extra theme colors for [TrackrTheme].

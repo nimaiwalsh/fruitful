@@ -18,15 +18,15 @@ package com.example.android.fruitful.ui
 
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
-import com.example.android.fruitful.data.Avatar
-import com.example.android.fruitful.data.Tag
-import com.example.android.fruitful.data.TagColor
-import com.example.android.fruitful.data.Task
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.data.TaskTag
-import com.example.android.fruitful.data.User
-import com.example.android.fruitful.data.UserTask
-import com.example.android.fruitful.db.AppDatabase
+import com.example.android.fruitful.compose.data.Avatar
+import com.example.android.fruitful.compose.data.Tag
+import com.example.android.fruitful.compose.data.TagColor
+import com.example.android.fruitful.compose.data.Task
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskTag
+import com.example.android.fruitful.compose.data.User
+import com.example.android.fruitful.compose.data.UserTask
+import com.example.android.fruitful.compose.db.AppDatabase
 import kotlinx.coroutines.runBlocking
 import java.time.Instant
 

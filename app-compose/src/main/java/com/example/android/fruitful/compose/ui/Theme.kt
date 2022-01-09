@@ -25,7 +25,7 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.android.fruitful.data.TagColor
+import com.example.android.fruitful.compose.data.TagColor
 
 private val Blue100 = Color(0xFFDDE3E9)
 private val Blue500 = Color(0xFF364F6B)

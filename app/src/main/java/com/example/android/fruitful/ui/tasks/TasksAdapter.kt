@@ -27,8 +27,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.fruitful.R
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.data.TaskSummary
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskSummary
 import com.example.android.fruitful.databinding.HeaderItemBinding
 import com.example.android.fruitful.databinding.TaskSummaryBinding
 import com.example.android.fruitful.ui.utils.AccessibilityUtils

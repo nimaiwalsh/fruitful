@@ -19,8 +19,8 @@ package com.example.android.fruitful.ui.utils
 import android.content.Context
 import android.text.TextUtils
 import com.example.android.fruitful.R
-import com.example.android.fruitful.data.TaskSummary
-import com.example.android.fruitful.utils.DateTimeUtils
+import com.example.android.fruitful.compose.data.TaskSummary
+import com.example.android.fruitful.compose.utils.DateTimeUtils
 import java.time.Clock
 
 object AccessibilityUtils {

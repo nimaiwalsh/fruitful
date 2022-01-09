@@ -17,10 +17,10 @@
 package com.example.android.fruitful.ui.tasks
 
 import com.example.android.fruitful.R
-import com.example.android.fruitful.data.Avatar
-import com.example.android.fruitful.data.TaskStatus
-import com.example.android.fruitful.data.TaskSummary
-import com.example.android.fruitful.data.User
+import com.example.android.fruitful.compose.data.Avatar
+import com.example.android.fruitful.compose.data.TaskStatus
+import com.example.android.fruitful.compose.data.TaskSummary
+import com.example.android.fruitful.compose.data.User
 import com.google.common.truth.Truth
 import org.junit.Test
 import java.time.Instant

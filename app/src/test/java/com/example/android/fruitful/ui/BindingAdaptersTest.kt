@@ -23,7 +23,7 @@ import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.TextView
 import androidx.test.core.app.ApplicationProvider
 import com.example.android.fruitful.TestApplication
-import com.example.android.fruitful.utils.DateTimeUtils
+import com.example.android.fruitful.compose.utils.DateTimeUtils
 import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockkObject
