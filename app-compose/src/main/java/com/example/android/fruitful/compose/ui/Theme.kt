@@ -71,7 +71,7 @@ private val LightColorPalette = lightColors(
     background = Blue500
 )
 
-private val DarkTrackrColors = TrackrColors(
+private val DarkTrackrColors = FruitfulColors(
     star = Yellow300,
     tagTexts = listOf(
         TagColor.BLUE to Blue100,
@@ -91,7 +91,7 @@ private val DarkTrackrColors = TrackrColors(
     ),
 )
 
-private val LightTrackrColors = TrackrColors(
+private val LightTrackrColors = FruitfulColors(
     star = Yellow500,
     tagTexts = listOf(
         TagColor.BLUE to Blue700,
@@ -111,18 +111,18 @@ private val LightTrackrColors = TrackrColors(
     ),
 )
 
-object TrackrTheme {
+object FruitfulTheme {
 
     /**
      * Extra theme colors.
      */
-    val colors: TrackrColors
+    val colors: FruitfulColors
         @Composable
         get() = LocalTrackrColors.current
 }
 
 @Composable
-fun TrackrTheme(
+fun FruitfulTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

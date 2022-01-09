@@ -55,7 +55,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.android.fruitful.compose.R
 import com.example.android.fruitful.compose.ui.TaskSummaryCard
-import com.example.android.fruitful.compose.ui.TrackrTheme
+import com.example.android.fruitful.compose.ui.FruitfulTheme
 import com.example.android.fruitful.compose.data.Avatar
 import com.example.android.fruitful.compose.data.Tag
 import com.example.android.fruitful.compose.data.TagColor
@@ -213,7 +213,7 @@ private fun AddTaskButton(
 @Preview
 @Composable
 private fun PreviewTasksContent() {
-    TrackrTheme {
+    FruitfulTheme {
         TasksContent(
             statusGroups = mapOf(
                 TaskStatus.IN_PROGRESS to TaskStatusGroup(

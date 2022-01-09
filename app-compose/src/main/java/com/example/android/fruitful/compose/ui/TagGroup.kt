@@ -51,7 +51,7 @@ fun TagGroup(
 @Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
 @Composable
 private fun PreviewTagGroup() {
-    TrackrTheme {
+    FruitfulTheme {
         TagGroup(
             tags = SeedData.Tags,
             modifier = Modifier.width(240.dp),

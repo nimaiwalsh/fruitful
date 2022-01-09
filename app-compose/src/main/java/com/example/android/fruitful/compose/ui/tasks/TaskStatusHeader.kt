@@ -39,7 +39,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.android.fruitful.compose.R
-import com.example.android.fruitful.compose.ui.TrackrTheme
+import com.example.android.fruitful.compose.ui.FruitfulTheme
 import com.example.android.fruitful.compose.data.TaskStatus
 
 @OptIn(ExperimentalMaterialApi::class)
@@ -94,7 +94,7 @@ internal fun TaskStatusHeader(
 private fun PreviewTaskStatusHeader() {
     Column {
         for (darkTheme in listOf(false, true)) {
-            TrackrTheme(darkTheme = darkTheme) {
+            FruitfulTheme(darkTheme = darkTheme) {
                 TaskStatusHeader(
                     status = TaskStatus.NOT_STARTED,
                     count = 3,

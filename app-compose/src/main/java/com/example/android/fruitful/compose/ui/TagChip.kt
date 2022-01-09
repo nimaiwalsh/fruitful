@@ -37,10 +37,10 @@ fun TagChip(
 ) {
     Text(
         text = tag.label,
-        color = TrackrTheme.colors.tagText(tag.color),
+        color = FruitfulTheme.colors.tagText(tag.color),
         modifier = modifier
             .background(
-                color = TrackrTheme.colors.tagBackground(tag.color),
+                color = FruitfulTheme.colors.tagBackground(tag.color),
                 shape = MaterialTheme.shapes.small
             )
             .padding(horizontal = 6.dp),
@@ -50,7 +50,7 @@ fun TagChip(
 @Preview(showBackground = true)
 @Composable
 private fun PreviewTagChip() {
-    TrackrTheme {
+    FruitfulTheme {
         Column {
             for (tag in SeedData.Tags) {
                 TagChip(tag = tag)

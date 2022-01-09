@@ -41,7 +41,7 @@ fun StarIconButton(
         Image(
             imageVector = if (filled) Icons.Default.Star else Icons.Default.StarBorder,
             contentDescription = contentDescription,
-            colorFilter = ColorFilter.tint(TrackrTheme.colors.star),
+            colorFilter = ColorFilter.tint(FruitfulTheme.colors.star),
         )
     }
 }
@@ -49,7 +49,7 @@ fun StarIconButton(
 @Preview(showBackground = true)
 @Composable
 fun PreviewStarIconButtons() {
-    TrackrTheme {
+    FruitfulTheme {
         Column {
             StarIconButton(
                 onClick = {},

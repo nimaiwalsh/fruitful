@@ -21,8 +21,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.android.fruitful.compose.ui.detail.TaskDetail
 import com.example.android.fruitful.compose.ui.detail.TaskDetailViewModel
 import com.example.android.fruitful.compose.ui.tasks.Tasks
@@ -30,7 +30,7 @@ import com.google.accompanist.insets.ProvideWindowInsets
 
 @Composable
 fun Main() {
-    TrackrTheme {
+    FruitfulTheme {
         ProvideWindowInsets {
             val navController = rememberNavController()
             NavHost(

@@ -117,7 +117,7 @@ private fun TaskSummaryDueAt(dueAt: Instant, clock: Clock) {
 @Preview
 @Composable
 private fun PreviewTaskSummaryCard() {
-    TrackrTheme {
+    FruitfulTheme {
         TaskSummaryCard(
             summary = TaskSummary(
                 id = 1L,

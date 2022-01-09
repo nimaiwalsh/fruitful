@@ -46,7 +46,7 @@ class TagGroupTest {
     @Test
     fun all() {
         rule.setContent {
-            TrackrTheme {
+            FruitfulTheme {
                 TagGroup(
                     tags = createTags(10)
                 )
@@ -60,7 +60,7 @@ class TagGroupTest {
     @Test
     fun limit() {
         rule.setContent {
-            TrackrTheme {
+            FruitfulTheme {
                 TagGroup(
                     tags = createTags(10),
                     max = 6
