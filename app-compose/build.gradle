@@ -23,12 +23,12 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
     buildToolsVersion build_tools_version
     defaultConfig {
         applicationId 'com.example.android.fruitful'
         minSdk 21
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName '1.0.0-alpha01'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -53,7 +53,6 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion compose_version
-        kotlinCompilerVersion kotlin_version
     }
     testOptions {
         unitTests.all {
@@ -70,8 +69,7 @@ android {
 }
 
 dependencies {
-    implementation project(':shared')
-    implementation "com.google.firebase:firebase-auth:$firebase_version"
+    implementation "com.google.firebase:firebase-auth-ktx:$firebase_version"
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:$desugar_jdk_version"
 
     implementation "androidx.core:core-ktx:$core_version"
@@ -85,9 +83,12 @@ dependencies {
     implementation "com.google.accompanist:accompanist-flowlayout:$accompanist_version"
 
     implementation "com.google.dagger:hilt-android:$hilt_version"
-    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0-alpha03'
+    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0-rc01'
     kapt "androidx.hilt:hilt-compiler:$hilt_compiler_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    kapt "androidx.room:room-compiler:$room_version"
+    api "androidx.room:room-ktx:$room_version"
 
     testImplementation "junit:junit:$junit_version"
     testImplementation "com.google.truth:truth:$truth_version"
@@ -109,4 +110,6 @@ dependencies {
     androidTestImplementation "androidx.test:runner:$androidx_test_runner_version"
     androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit_version"
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+
 }
