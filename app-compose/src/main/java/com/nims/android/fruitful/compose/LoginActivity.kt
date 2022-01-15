@@ -41,7 +41,8 @@ class LoginActivity : ComponentActivity() {
 
     // MOVE TO STRINGS FILE
     // WebApp Auth0 client id
-    val DEFAULT_WEB_CLIENT_ID = "815771546206-iptp0k074gnsi4udjgh5sm7gvtvls8sd.apps.googleusercontent.com"
+    val RELEASE_DEFAULT_WEB_CLIENT_ID = "815771546206-iptp0k074gnsi4udjgh5sm7gvtvls8sd.apps.googleusercontent.com"
+    val DEBUG_DEFAULT_WEB_CLIENT_ID = "212877791041-u48o1nmebmatdvqvk7n0ggdoojfrqugi.apps.googleusercontent.com"
 
     private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
@@ -57,7 +58,7 @@ class LoginActivity : ComponentActivity() {
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-//            .requestIdToken(DEFAULT_WEB_CLIENT_ID)
+            .requestIdToken(DEBUG_DEFAULT_WEB_CLIENT_ID)
             .requestEmail()
             .build()
 

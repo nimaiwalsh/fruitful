@@ -117,6 +117,7 @@ dependencies {
 
 }
 
+// USE EITHER DEBUG/RELEASE GOOGLE SERVICES VARIANTS
 task switchToDebug(type: Copy) {
     description = 'Switches to DEBUG google-services.json'
     from "src/debug"
