@@ -17,6 +17,7 @@
 package com.nims.android.fruitful.compose
 
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -51,7 +52,7 @@ class LoginActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
-        setContent { Login(hiltViewModel(), { signIn() }) }
+        setContent { Login(hiltViewModel()) { signIn() } }
 
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -77,12 +78,13 @@ class LoginActivity : ComponentActivity() {
         val currentUser = auth.currentUser
 
         //SIGNED IN
-        //updateUI(currentUser);
-
+        if (currentUser != null) {
+            Log.d(TAG, "currentUserSignedIn: success")
+            launchMainActivity()
+        }
     }
 
     private fun signIn() {
-        println("SIGN_IN")
         val signInIntent = mGoogleSignInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
@@ -113,7 +115,7 @@ class LoginActivity : ComponentActivity() {
                     Log.d(TAG, "signInWithCredential:success")
                     val user = auth.currentUser
                     // UPDATE UI
-                    // updateUI(user)
+                    launchMainActivity()
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
@@ -123,4 +125,8 @@ class LoginActivity : ComponentActivity() {
             }
     }
 
+    private fun launchMainActivity() {
+        val mainActivity = Intent(this, MainActivity::class.java)
+        this.startActivity(mainActivity)
+    }
 }
