@@ -22,7 +22,8 @@ import com.google.accompanist.insets.rememberInsetsPaddingValues
 
 @Composable
 fun Login(
-    viewModel: LoginViewModel
+    viewModel: LoginViewModel,
+    signIn: () -> Unit,
 ) {
     FruitfulTheme {
         ProvideWindowInsets {
@@ -39,7 +40,7 @@ fun Login(
             ) {
                 Button(
                     colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.secondary),
-                    onClick = { launchMainActivity(context) },
+                    onClick = { signIn() },
                 ) {
                     Text(text = "Login")
                 }
