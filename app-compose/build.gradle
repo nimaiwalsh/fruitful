@@ -30,13 +30,17 @@ android {
         minSdk 21
         targetSdk 31
         versionCode 1
-        versionName '1.0.0-alpha01'
+        versionName '1.0.0-alpha02'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [usesCleartextTraffic:"false"]
+        }
+        debug {
+            manifestPlaceholders = [usesCleartextTraffic:"true"]
         }
     }
     compileOptions {
@@ -70,8 +74,9 @@ android {
 
 dependencies {
     implementation "com.google.firebase:firebase-auth-ktx:$firebase_version"
-    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-auth:20.0.1'
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:$desugar_jdk_version"
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.0'
 
     implementation "androidx.core:core-ktx:$core_version"
     implementation "androidx.compose.ui:ui:$compose_version"
@@ -118,21 +123,24 @@ dependencies {
 }
 
 // USE EITHER DEBUG/RELEASE GOOGLE SERVICES VARIANTS
-task switchToDebug(type: Copy) {
-    description = 'Switches to DEBUG google-services.json'
-    from "src/debug"
-    include "google-services.json"
-    into "."
-}
+// You will need to create a `debug` and `release` file in root and add the `google-services.json` file
+// for src for this to work
 
-task switchToRelease(type: Copy) {
-    description = 'Switches to RELEASE google-services.json'
-    from "src/release"
-    include "google-services.json"
-    into "."
-}
-
-afterEvaluate {
-    processDebugGoogleServices.dependsOn switchToDebug
-    processReleaseGoogleServices.dependsOn switchToRelease
-}
+//task switchToDebug(type: Copy) {
+//    description = 'Switches to DEBUG google-services.json'
+//    from "src/debug"
+//    include "google-services.json"
+//    into "."
+//}
+//
+//task switchToRelease(type: Copy) {
+//    description = 'Switches to RELEASE google-services.json'
+//    from "src/release"
+//    include "google-services.json"
+//    into "."
+//}
+//
+//afterEvaluate {
+//    processDebugGoogleServices.dependsOn switchToDebug
+//    processReleaseGoogleServices.dependsOn switchToRelease
+//}

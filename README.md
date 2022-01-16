@@ -1,47 +1,6 @@
-Trackr Android App
+Fruitful Android App
 ==================
 
-**Note**: Trackr uses version 7 of Gradle, which currently requires Android Studio Beta or Canary.
-
-Trackr is a sample task management app used to explore common UI patterns
-from the perspective of supporting accessibility. Trackr is currently under
-development.
-
-Using Trackr, end users can discover, create, and edit tasks; they can
-assign tasks to team members and they can associate different tags with
-each task.  Users can archive a task by swiping right and they can modify a
-task's priority by dragging it up or down.
-
-Developers are encouraged to explore Trackr using an accessibility service
-like [Talkback](https://support.google.com/accessibility/android/answer/6283677?hl=en) or
-[Switch Access](https://support.google.com/accessibility/android/answer/6122836?hl=en);
-developers are also encouraged to try out the various accessibility settings
-found on their devices (see Settings > Accessibility on most Android phones)
-when using Trackr. If you have any suggestions, please create an issue
-(see below).
-
-Trackr is designed with the goal of allowing all users to enjoy its core
-functionality, including users with disabilities who may interact with their
-devices using accessibility services. So, for example, while blind and low
-vision users or users with manual dexterity issues may not be able to perform
-the swipe gesture to archive an item or drag and drop items to reorder their
-priority, they should nonetheless be able to access the archive and reorder
-functionality through the accessibility service they are using.
-
-
-APIs showcased
----------------------------
-The following accessibility APIs (non exhaustive list) are showcased in this sample:
-
-[ViewCompat#addAccessibilityAction()](https://developer.android.com/reference/androidx/core/view/ViewCompat#addAccessibilityAction(android.view.View,%20java.lang.CharSequence,%20androidx.core.view.accessibility.AccessibilityViewCommand)): to surface functionality like swipe-to-archive, drag and drop, etc.
-
-[ViewCompat#performAccessiblityAction()](https://developer.android.com/reference/androidx/core/view/ViewCompat#performAccessibilityAction(android.view.View,%20int,%20android.os.Bundle)): used in testing.
-
-[ViewCompat#replaceAccessibilityAction()](https://developer.android.com/reference/androidx/core/view/ViewCompat#replaceAccessibilityAction(android.view.View,%20androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat,%20java.lang.CharSequence,%20androidx.core.view.accessibility.AccessibilityViewCommand)): used to customize the label for associated with an action.
-
-[ViewCompat.setStateDescription()](https://developer.android.com/reference/androidx/core/view/ViewCompat#setStateDescription(android.view.View,%20java.lang.CharSequence)): used to specify state associated with a view.
-
-[AccessibilityManager#getRecommendedTimeoutMillis()](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager#getRecommendedTimeoutMillis(int,%20int)): used to specify the timeout for ephemeral content.
 
 Getting Started
 -------------------------
@@ -51,10 +10,7 @@ This project uses the Gradle build system. To build this project, use the
 
 To run tests, run `gradlew test`
 
-To learn more about Android accessibility, visit the
-[Android accessibility](https://www.android.com/accessibility/) page. To learn
-more about developer facing aspects of Android accessibility, read the
-[accessibility developer guide](https://developer.android.com/guide/topics/ui/accessibility).
+As this project uses Firebase, you will need to run the Firebase emulators when running in debug mode. 
 
 Screenshots
 -----------
