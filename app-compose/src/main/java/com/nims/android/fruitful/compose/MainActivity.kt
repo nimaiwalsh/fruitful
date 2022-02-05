@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
     private fun signOut() {
         authUI?.signOut(this)?.addOnCompleteListener {
             Log.d("SIGN_OUT_SUCCESS", "User successfully signed out")
-            this.onStart()
+            recreate()
         }
     }
 
