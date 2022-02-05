@@ -27,7 +27,7 @@ android {
     buildToolsVersion build_tools_version
     defaultConfig {
         applicationId 'com.nims.android.fruitful'
-        minSdk 21
+        minSdk 28
         targetSdk 31
         versionCode 1
         versionName '1.0.0-alpha02'
@@ -74,7 +74,7 @@ android {
 
 dependencies {
     implementation "com.google.firebase:firebase-auth-ktx:$firebase_version"
-    implementation 'com.google.android.gms:play-services-auth:20.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:$desugar_jdk_version"
     implementation 'com.firebaseui:firebase-ui-auth:8.0.0'
 

@@ -41,6 +41,7 @@
     <string name="tasks">Tasks</string>
     <string name="archive">Archive</string>
     <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
 
     <!-- Due date messages -->
     <!-- When due date is 5 or more days away, display with date. Example: Due Mar 15, 2020 -->

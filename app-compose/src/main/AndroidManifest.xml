@@ -27,22 +27,14 @@
         android:usesCleartextTraffic="${usesCleartextTraffic}">
 
         <activity
-            android:name="com.nims.android.fruitful.compose.LoginActivity"
+            android:name="com.nims.android.fruitful.compose.MainActivity"
             android:exported="true"
-            android:noHistory="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Fruitful">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
-        <activity
-            android:name="com.nims.android.fruitful.compose.MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Fruitful">
         </activity>
 
     </application>

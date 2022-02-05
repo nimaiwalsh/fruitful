@@ -74,7 +74,8 @@ fun Tasks(
     onTaskClick: (taskId: Long) -> Unit,
     onAddTaskClick: () -> Unit,
     onArchiveClick: () -> Unit,
-    onSettingsClick: () -> Unit
+    onSettingsClick: () -> Unit,
+    onLogoutClick: () -> Unit,
 ) {
     val statusGroups by viewModel.statusGroups.collectAsState(emptyMap())
     TasksContent(
@@ -85,7 +86,8 @@ fun Tasks(
         onTaskClick = onTaskClick,
         onAddTaskClick = onAddTaskClick,
         onArchiveClick = onArchiveClick,
-        onSettingsClick = onSettingsClick
+        onSettingsClick = onSettingsClick,
+        onLogoutClick = onLogoutClick,
     )
 }
 
@@ -99,7 +101,8 @@ private fun TasksContent(
     onTaskClick: (taskId: Long) -> Unit,
     onAddTaskClick: () -> Unit,
     onArchiveClick: () -> Unit,
-    onSettingsClick: () -> Unit
+    onSettingsClick: () -> Unit,
+    onLogoutClick: () -> Unit,
 ) {
     val systemBars = LocalWindowInsets.current.systemBars
     var bottomBarHeight by remember { mutableStateOf(0) }
@@ -116,6 +119,7 @@ private fun TasksContent(
             TasksBottomBar(
                 onArchiveClick = onArchiveClick,
                 onSettingsClick = onSettingsClick,
+                onLogoutClick = onLogoutClick,
                 modifier = Modifier.onSizeChanged { size -> bottomBarHeight = size.height }
             )
         },
@@ -166,6 +170,7 @@ private fun TasksContent(
 private fun TasksBottomBar(
     onArchiveClick: () -> Unit,
     onSettingsClick: () -> Unit,
+    onLogoutClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     var menuExpanded by remember { mutableStateOf(false) }
@@ -193,6 +198,9 @@ private fun TasksBottomBar(
             }
             DropdownMenuItem(onClick = onSettingsClick) {
                 Text(text = stringResource(R.string.settings))
+            }
+            DropdownMenuItem(onClick = onLogoutClick) {
+                Text(text = stringResource(R.string.logout))
             }
         }
     }
@@ -246,7 +254,8 @@ private fun PreviewTasksContent() {
             onTaskClick = {},
             onAddTaskClick = {},
             onArchiveClick = {},
-            onSettingsClick = {}
+            onSettingsClick = {},
+            onLogoutClick = {},
         )
     }
 }

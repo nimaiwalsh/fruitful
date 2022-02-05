@@ -29,7 +29,9 @@ import com.nims.android.fruitful.compose.ui.tasks.Tasks
 import com.google.accompanist.insets.ProvideWindowInsets
 
 @Composable
-fun Main() {
+fun Main(
+    onLogoutClick: () -> Unit,
+) {
     FruitfulTheme {
         ProvideWindowInsets {
             val navController = rememberNavController()
@@ -51,6 +53,9 @@ fun Main() {
                         },
                         onSettingsClick = {
                             // TODO
+                        },
+                        onLogoutClick = {
+                            onLogoutClick()
                         }
                     )
                 }
